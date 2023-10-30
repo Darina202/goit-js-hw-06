@@ -6,12 +6,10 @@ function registration(event) {
   const { email, password } = event.currentTarget.elements;
   //   const email = form.elements.email;
   //   const password = form.elements.password;
-
   if (email.value === '' || password.value === '') {
     return alert('Всі поля повинні бути заповнені!');
   }
   // console.log(`Email: ${email.value}, Password: ${password.value}`);
-
   const feedback = {
     Email: email.value,
     Password: password.value,
