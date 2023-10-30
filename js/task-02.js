@@ -8,10 +8,11 @@ const ingredients = [
 ];
 
 const menu = document.querySelector('#ingredients');
-
+const arr = [];
 ingredients.forEach(plate => {
   const ingredient = document.createElement('li');
   ingredient.classList.add('item');
   ingredient.textContent = plate;
-  menu.append(ingredient);
+  arr.push(ingredient);
 });
+menu.append(...arr);

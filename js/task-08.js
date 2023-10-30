@@ -10,13 +10,13 @@ function registration(event) {
   if (email.value === '' || password.value === '') {
     return alert('Всі поля повинні бути заповнені!');
   }
-  console.log(`Email: ${email.value}, Password: ${password.value}`);
+  // console.log(`Email: ${email.value}, Password: ${password.value}`);
 
-  //   const feedback = {
-  //     email: email.value,
-  //     password: password.value,
-  //   };
-  //   console.log(feedback);
+  const feedback = {
+    Email: email.value,
+    Password: password.value,
+  };
+  console.log(feedback);
   form.reset();
 }
 registerForm.addEventListener('submit', registration);
